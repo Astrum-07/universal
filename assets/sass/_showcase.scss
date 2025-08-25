@@ -3,6 +3,7 @@
 
 .showcase {
   background: #262d33;
+  
   padding: 30px 0;
   &_links {
     @include flex(center, space-between, 30px);
@@ -109,22 +110,88 @@
   }
 }
 
-
 .showcase_recomended {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
 @media (max-width: 1000px) {
-    .showcase {
-      &_bottom {
-        width: 100%;
-        grid-template-columns: 100%;
-      }
+  .showcase {
+    &_bottom {
+      width: 100%;
+      grid-template-columns: 100%;
+      
+        .showcase_recomended{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+      
     }
   }
-  @media (max-width: 600px) {
-    .showcase_recomended {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-      }
+}
+@media (max-width: 834px) {
+  .showcase {
+    &_bottom {
+      width: 100%;
+      grid-template-columns: 100%;
+      
+        .showcase_recomended{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+      
+    }
   }
+}
+@media (max-width: 663px) {
+  .showcase {
+   
+    &_bottom {
+      
+      
+        .showcase_recomended{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+        }
+      
+    }
+  }
+}
+@media (max-width: 497px) {
+.showcase {
+   
+    &_bottom {
+      
+      
+        .showcase_recomended{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+      
+    }
+  }
+}
+
+.showcase_recomended {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  .div1 {
+    height: 10%;
+  }
+  .div2 {
+    height: 18%;
+   
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+      color: #4b5157;
+      margin-top: 10px;
+    }
+  }
+  div:hover {
+    background-color: antiquewhite;
+  }
+}

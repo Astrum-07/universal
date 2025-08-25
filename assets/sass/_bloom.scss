@@ -1,0 +1,24 @@
+@use "./global";
+.bloom {
+  text-align: center;
+  padding: 50px 0;
+  background: linear-gradient(135deg, #b54747 0%, #1a8b78 40%, #001f4d 100%);
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: center;
+    color: #fff;
+  }
+  button {
+    background: rgb(69, 146, 255);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    margin-top: 20px;
+  }
+}
